@@ -1,0 +1,246 @@
+$rosa: #ff9d8e;
+$width: 100%;
+$height: 100%;
+$fotos: (background-color: white );
+
+
+@import "fix_ipadpro";
+@import "nosotros";
+@import "faqs";
+@import "contacto";
+h1{ font-size: 75px;text-align: center; margin-bottom: 50px; color:$rosa}
+.linea{
+    border-top: 1px solid #ff9d8e;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    
+}
+
+
+#header { ul {
+
+    a {color: black;}
+
+    a:hover { color: $rosa;}
+}
+ul .active {color: $rosa;}
+
+}
+
+#encabezado { text-align: center;background-image: url(../assets/fondo/encabezado.jpg) ;background-size: cover; height: 70vh;
+    h1 { color: white; font-weight: bold; font-size:50px; margin-top: 20vh; background-color:rgba(0, 0, 0, 0.3); display: inline-block; padding: auto
+        ;}
+    p{ color: white;;background-color:rgba(0, 0, 0, 0.3); display: inline-block; text-align: center; padding: auto;}
+
+}
+
+footer {box-shadow: 0px -1px 10px;
+
+    div{background-color:$rosa}
+}
+header {
+    .nav-item {padding: 20px 30px}
+    .navbar{
+        padding: 0px;
+        -webkit-box-shadow: 4px 9px 25px -6px rgba(77,77,77,0.61);
+    -moz-box-shadow: 4px 9px 25px -6px rgba(77,77,77,0.61);
+    box-shadow: 4px 9px 25px -6px rgba(77,77,77,0.61);
+    background-color: white
+    }
+    ul.dropdown-menu{
+        width: 11vw;
+        border-radius: 0px;
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 16px;
+        text-decoration: none;
+        padding: 0px;
+        list-style-type: none;
+        -webkit-animation: mymove 0.5s;
+        animation-name: mymove 0.5s;
+        background-color: #fff;
+        -webkit-box-shadow: 4px 9px 25px -6px rgba(77,77,77,0.61);
+    -moz-box-shadow: 4px 9px 25px -6px rgba(77,77,77,0.61);
+    box-shadow: 4px 9px 25px -6px rgba(77,77,77,0.61);
+    }
+    li.dropdown:hover ul.dropdown-menu{
+        display: block;
+    }
+    @keyframes mymove {
+        from {
+        left:  100px;
+            height: 0px;
+            opacity: 0;
+            border-bottom:0px;
+        }
+        to {
+            height: auto;
+    
+        }
+    }
+
+    .dropdown-menu{
+        li{ 
+            border-bottom: 1px solid #ccc;
+            padding: 20px;
+            display:block;
+            a{color: #444;
+                text-decoration: none;
+                text-transform: capitalize;
+                background-color: white
+            };
+            a:hover {background-color: white;}
+            a:focus {background-color: white;};
+            .active{
+                background-color: white
+                }
+            
+        }}
+        li:hover{
+            a{color:$rosa}
+        }
+    .navbar-nav { 
+        a.nav-link {
+            
+                text-transform: uppercase;
+                padding: 0px ;
+        }
+    
+        .nav-item:hover:after{
+            width: 100%;
+        background:$rosa
+        }
+    }
+    ul.navbar-nav {
+        li.nav-item{margin: 0 20px;
+        };
+        
+        .nav-item:after {
+            content: '';
+            margin-left:7px;
+            display: block;
+            height: 2px;
+            width: 0;
+            transition: width .5s ease, 
+            background-color .5s ease;
+
+        }
+    }
+
+}
+
+.galeria{ h1
+{
+    text-align: center;
+    margin:20px 0 15px 0;
+    ;
+}}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+    .imagen{
+        width: 24%;
+        position: relative;
+        margin-bottom:5px;
+        @for $fotos from 1 through 7{.galeria_fotos-#{$fotos} {width: $width;height: $height ;object-fit: cover}  }
+    }
+    }
+    .imagen:hover .overlay{
+        height:100%;
+        cursor: pointer;
+    }
+
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: $rosa;
+    opacity: 75%;
+    h2{
+        color: #fff;
+        font-weight: 300;
+        font-size:30px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        color: black
+    
+    }
+}
+
+#icons-section {background-color: $rosa;
+        svg {width: 10vh; color: white;
+        p{text-align: justify;}} }
+
+@media screen and (max-width:1366px){
+            .contenedor-imagenes{
+                width: 100%;
+                .imagen{
+                    width: 23%;
+                }
+            }
+        
+            
+            #encabezado {background-image: url(../assets/fondo/encabezado.jpg) ;background-size: cover; height: 60vh; 
+                h1 { font-weight: bold; font-size:35px; margin-top: 10vh}}
+            h1.carouseles{font-size: 40px}
+        
+        }
+@media screen and (max-width:1024px){
+            #encabezado {background-image: url(../assets/fondo/encabezado.jpg) ;background-size: cover; height: 60vh; 
+                h1 { font-weight: bold; font-size:35px; margin-top: 10vh}}
+            h1.carouseles{font-size: 40px}
+        
+        }
+        
+@media screen and (max-width:2560px){
+            
+            
+        
+        }
+        
+        
+@media screen and (max-width:700px){
+            .contenedor-imagenes{
+                width: 90%;.imagen{
+                    width: 48%;
+                }
+            #encabezado {background-image: url(../assets/fondo/encabezado.jpg) ;background-size: cover; height: 60vh; 
+                h1 { font-weight: bold; font-size:30px; margin-top: 10vh; }}
+        }
+        
+@media screen and (max-width:450px){
+            h1{
+                font-size:22px;
+            }
+            .contenedor-imagenes{
+                width: 98%;
+            }
+            .contenedor-imagenes .imagen{
+                width: 80%;
+            }
+            #encabezado h1 { font-weight: bold; font-size:20px; margin-top: 10vh}
+        }}
+        
+
+        @media only screen and (max-width: 400px) {
+            h1 {
+            font-size: 50px; text-align: center
+            }
+        @media only screen and (max-width: 300px) {
+            h1{
+            font-size: 40px; text-align: center
+            }}}

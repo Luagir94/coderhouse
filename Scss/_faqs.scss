@@ -1,0 +1,16 @@
+.faqs  {list-style-image: url(../assets/varios/pata.png);
+            ul{
+                li{
+                    ul{
+                        li{list-style: none;}
+                    }
+                }
+            }}
+ol{line-height: 2}
+.faqs {margin: 50px 50px 50px 50px;
+        ul{
+            li{
+                ul{padding: 10px}
+            }
+        }}
+

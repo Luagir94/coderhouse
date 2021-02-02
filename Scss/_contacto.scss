@@ -1,0 +1,35 @@
+$redes: (
+	wpp:50px,
+	facebook: 50px,
+	instagram:50px
+);
+
+
+
+
+#formulario{border: solid 1px; margin-bottom: 100px; margin-top:100px;}
+#formulario-redes{border: solid 1px; margin-bottom: 100px; margin-top:100px;
+    #redes {display: flex; flex-direction: row; justify-content: space-between;
+        div {margin-bottom: 180px;
+            a
+            {@each $red, $size in $redes {
+                .icon-#{$red} {
+                    width: $size;
+                }
+            }}}}}
+
+
+#hablemos {margin-left: 10px; margin-right: 10px;}
+.contact { font-size: 50px; }
+
+
+
+@media only screen and (max-width: 480px) {
+    #formulario-redes{border: solid 1px; margin-bottom: 100px; margin-top:-30px;} div #contactos #formulario-redes #redes{ margin-bottom: -100px } div #contactos #formulario-redes #redes div {margin-top: -100px}
+    }
+    .contact{font-size: 30px; margin-bottom: 100px;}
+
+@media only screen and (min-width: 1280px ) { 
+    div #contactos #formulario-redes #redes div a img{width: 150px}}
+@media only screen and (min-width: 1024px) {
+         div #contactos #formulario-redes #redes div a img{width: 100px}}
