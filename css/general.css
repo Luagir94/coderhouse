@@ -97,8 +97,6 @@ ol {
 
 @media only screen and (max-width: 480px) {
   #formulario-redes {
-    border: solid 1px;
-    margin-bottom: 100px;
     margin-top: -30px;
   }
   div #contactos #formulario-redes #redes {
