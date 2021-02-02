@@ -37,6 +37,9 @@ ul .active {color: $rosa;}
 footer {box-shadow: 0px -1px 10px;
 
     div{background-color:$rosa}
+    
+    li {
+        a {text-decoration: none;}}
 }
 header {
     .nav-item {padding: 20px 30px}

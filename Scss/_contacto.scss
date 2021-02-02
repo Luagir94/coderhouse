@@ -8,9 +8,9 @@ $redes: (
 
 
 #formulario{border: solid 1px; margin-bottom: 100px; margin-top:100px;}
-#formulario-redes{border: solid 1px; margin-bottom: 100px; margin-top:100px;
+#formulario-redes{;
     #redes {display: flex; flex-direction: row; justify-content: space-between;
-        div {margin-bottom: 180px;
+        div {;
             a
             {@each $red, $size in $redes {
                 .icon-#{$red} {

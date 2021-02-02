@@ -61,12 +61,6 @@ ol {
   margin-top: 100px;
 }
 
-#formulario-redes {
-  border: solid 1px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-}
-
 #formulario-redes #redes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,10 +72,6 @@ ol {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-#formulario-redes #redes div {
-  margin-bottom: 180px;
 }
 
 #formulario-redes #redes div a .icon-wpp {
@@ -193,6 +183,10 @@ footer {
 
 footer div {
   background-color: #ff9d8e;
+}
+
+footer li a {
+  text-decoration: none;
 }
 
 header .nav-item {
