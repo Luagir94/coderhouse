@@ -86,8 +86,29 @@ ol {
   width: 50px;
 }
 
-label p {
-  text-align: left;
+input[type=text] {
+  border: 2px solid #ff9d8e;
+  border-radius: 4px;
+}
+
+input[type=email] {
+  border: 2px solid #ff9d8e;
+  border-radius: 4px;
+}
+
+#inputmensaje {
+  border: 2px solid #ff9d8e;
+  border-radius: 4px;
+}
+
+#buttoncontact {
+  background-color: #ff9d8e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 #hablemos {

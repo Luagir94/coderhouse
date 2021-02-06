@@ -17,8 +17,27 @@ $redes: (
                     width: $size;
                 }
             }}}}}
-label { p {text-align: left}}
-
+            input[type=text] {
+                border: 2px solid $rosa;
+                border-radius: 4px;
+              }
+              input[type=email] {
+                border: 2px solid $rosa;
+                border-radius: 4px;
+              }
+              #inputmensaje{
+                border: 2px solid $rosa;
+                border-radius: 4px;
+              }
+              #buttoncontact {
+                background-color: $rosa;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+              }
 #hablemos {margin-left: 10px; margin-right: 10px;}
 .contact { font-size: 50px; }
 
