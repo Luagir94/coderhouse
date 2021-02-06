@@ -10,14 +10,14 @@ $redes: (
 #formulario{border: solid 1px; margin-bottom: 100px; margin-top:100px;}
 #formulario-redes{;
     #redes {display: flex; flex-direction: row; justify-content: space-between;
-        div {;
+        div {
             a
             {@each $red, $size in $redes {
                 .icon-#{$red} {
                     width: $size;
                 }
             }}}}}
-
+label { p {text-align: left}}
 
 #hablemos {margin-left: 10px; margin-right: 10px;}
 .contact { font-size: 50px; }

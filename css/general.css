@@ -86,6 +86,10 @@ ol {
   width: 50px;
 }
 
+label p {
+  text-align: left;
+}
+
 #hablemos {
   margin-left: 10px;
   margin-right: 10px;
