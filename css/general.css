@@ -210,6 +210,7 @@ footer div {
 
 footer li a {
   text-decoration: none;
+  color: black;
 }
 
 header .nav-item {
