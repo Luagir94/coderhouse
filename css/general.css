@@ -427,6 +427,10 @@ header ul.navbar-nav .nav-item:after {
   color: black;
 }
 
+.form-group label {
+  text-align: left !important;
+}
+
 #icons-section {
   background-color: #ff9d8e;
 }
