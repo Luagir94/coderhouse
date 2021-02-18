@@ -526,6 +526,9 @@ header ul.navbar-nav .nav-item:after {
     margin-left: 5px;
     margin-right: 5px;
   }
+  .icons {
+    width: 40px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
